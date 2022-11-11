@@ -1,0 +1,653 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #ffff;
+  font-family: "Euclid Circular B", sans-serif;
+  width: 100vh;
+  height: 100vh;
+}
+/* main body */
+
+.dashboard {
+  display: flex;
+}
+/* side bar path */
+.side-bar {
+  width: 220px;
+  height: 100vh;
+
+  background-color: #ffff;
+  border: 0.5px solid #c4ccd2;
+  position: fixed;
+}
+.side-bar-profile {
+  background: #f5f5f6;
+  border-radius: 10px;
+  width: 180px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.profile-bar {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+  text-align: center;
+  white-space: nowrap;
+}
+.side-bar-details {
+  width: 30px;
+  height: 20px;
+  margin-top: 35.26px;
+  padding-left: 34px;
+  white-space: nowrap;
+}
+.side-bar-link {
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  color: #68717f;
+  margin-bottom: 25px;
+}
+.side-bar-icon {
+  padding-right: 18px;
+}
+.side-bar-logout {
+  padding-top: 150px;
+}
+.side-bar-nav-click {
+  color: #0098db;
+}
+/*Transaction table, no transaction header starts here */
+
+.main-dashboard-content {
+  width: 100vh;
+  height: 100%;
+}
+
+.main-dashboard-container {
+  width: 100vh;
+  height: 100%;
+}
+
+.main-dashboard-details {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  padding-top: 20px;
+  display: flex;
+  color: #68717f;
+}
+.main-dashboard-icon-text {
+  padding-left: 16px;
+  position: relative;
+  left: 100%;
+  margin-top: 40%;
+  text-align: center;
+}
+.main-dashboard-icon {
+  background: rgba(18, 54, 108, 0.08);
+  width: 120px;
+  height: 100px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  border-radius: 100%;
+}
+
+.main-dashboard-transaction-text {
+  text-align: center;
+  padding-top: 16px;
+  position: relative;
+  left: 75%;
+}
+.main-dashboard-container {
+  display: none;
+}
+
+/* table starts here */
+
+.main-transaction-table {
+  width: 100vh;
+  height: 100%;
+  margin-top: 5px;
+  background: white;
+  border-radius: 3px;
+  margin-left: 38%;
+}
+.main-transaction-header {
+  padding-top: 8px;
+  padding-left: 35px;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #68717f;
+  margin-bottom: 20px;
+}
+.transaction-table-options {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 1011px;
+  height: 60px;
+  background: #f4f4f6;
+  border-radius: 4px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.transaction-table-input {
+  background: #ffffff;
+  border: 1px solid #e3e7eb;
+  border-radius: 4px;
+  width: 700px;
+  height: 40px;
+  margin: 10px 0 10px 10px;
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d708d;
+}
+.search-transaction {
+  padding-top: 10px;
+  position: relative;
+  right: 27%;
+}
+.transaction-table-filter {
+  width: 100px;
+  height: 35px;
+  background: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #e3e7eb;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4d708d;
+}
+.user-export-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.transaction-table-output {
+  border-collapse: collapse;
+  margin: 15px 0;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  /* border-spacing: 5px; */
+  border: 1px solid #e3e7eb;
+  border-radius: 5px;
+}
+.transaction-table-output thead tr {
+  color: #00325c;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid #e3e7eb;
+}
+
+.transaction-table-output th,
+.transaction-table-output td {
+  padding: 12px 13px;
+}
+/* footer starts here */
+.footer {
+  background: #f4f4f6;
+  box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 1025px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #4d708d;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 18px;
+}
+.footer-pages {
+  padding: 15px 25px;
+}
+.footer-page-info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  right: -45%;
+  font-weight: 300;
+  font-size: 14px;
+}
+.footer-number {
+  background-color: #ffffff;
+  width: 40px;
+  height: 7px;
+  text-align: center;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-left: 45%;
+  margin-bottom: 4px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+/* user starts here */
+.user-header-transaction {
+  display: flex;
+  justify-content: space-between;
+}
+.user-page-button {
+  cursor: pointer;
+  margin-right: -55%;
+  width: 140px;
+  height: 38px;
+  background: #0097dc;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.user1-table-output,
+.terminal-table-output {
+  border-collapse: collapse;
+  margin: 15px 0;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-family: "Euclid Circular B";
+  border: 1px solid #e3e7eb;
+  border-radius: 5px;
+}
+.user1-table-output thead tr {
+  color: #00325c;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid #e3e7eb;
+}
+.user1-table-output th,
+.user1-table-output td {
+  padding: 12px 19px;
+  cursor: pointer;
+}
+.enabled {
+  width: 90px;
+  height: 25px;
+  background: #3ba871;
+  border-radius: 4px;
+  /* font-weight: 500; */
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+}
+.user-modal1 {
+  display: none;
+}
+.user-modal-box,
+.terminal-modal-box {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.user-modal-content {
+  position: fixed;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 222;
+  left: 30%;
+}
+.terminal-modal-content,
+.user-modal-form {
+  position: fixed;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 222;
+  left: 30%;
+}
+.user-modal-card {
+  background: #ffffff;
+  width: 491px;
+  height: 430px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.terminal-modal-card {
+  background: #ffffff;
+  width: 491px;
+  height: 412px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.transaction-box-listing,
+.terminal-listing,
+.settlement-box-listing {
+  display: flex;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+}
+.list-header {
+  width: auto;
+  color: #4d708d;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 20px;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(77, 112, 141, 0.05);
+}
+.user-listing-details,
+.transaction-listing-details,
+.terminal-listing-details,
+.settlement-listing-details {
+  margin-top: 45px;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+.user-list-box1 {
+  margin-top: 18px;
+  margin-left: 8%;
+  text-align: left;
+}
+.terminal-list-box1 {
+  margin-top: 23px;
+  margin-left: -20%;
+  text-align: left;
+}
+.user-list-box2 {
+  margin-top: 15px;
+  margin-right: 32px;
+  text-align: right;
+}
+.list-id {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(77, 112, 141, 0.8);
+  /* padding-top: 10px; */
+  margin-bottom: 23px;
+  margin-top: 3px;
+}
+.list-tag {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(77, 112, 141, 0.8);
+}
+.transaction-modal1-box {
+  display: none;
+}
+.transaction-modal1-box {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.transaction-modal-content,
+.settlement-modal-content {
+  position: fixed;
+  margin: 0 auto;
+  top: 10px;
+  z-index: 222;
+  left: 30%;
+}
+.transaction-modal-card,
+.settlement-modal-card {
+  background: #ffffff;
+  width: 550px;
+  height: 570px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.transaction-list-box1,
+.settlement-list-box1 {
+  margin-top: 23px;
+  margin-left: -33%;
+  text-align: left;
+}
+.transaction-list-box2,
+.settlement-list-box2 {
+  margin-top: 23px;
+  margin-right: 35px;
+  text-align: right;
+}
+
+.terminal-list-tag {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(77, 112, 141, 0.8);
+}
+.terminal-list-id {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(77, 112, 141, 0.8);
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+.terminal-enabled {
+  margin-bottom: 23px;
+  margin-top: 3px;
+  width: 90px;
+  height: 25px;
+  background: #3ba871;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 40%;
+}
+.terminal-list-box2 {
+  margin-top: 23px;
+  margin-right: 35px;
+  text-align: right;
+}
+.terminal-modal1,
+.terminal-form2 {
+  display: none;
+}
+.settlement-modal1-box {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.settlement-modal1-box {
+  display: none;
+}
+.user-modal-form,
+.terminal-form {
+  position: fixed;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 222;
+  left: 35%;
+}
+.user-modal-card-form {
+  background: #ffffff;
+  width: 491px;
+  height: 550px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.terminal-modal-form {
+  background: #ffffff;
+  width: 491px;
+  height: 470px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.user-modal-card-form2 {
+  background: #ffffff;
+  width: 491px;
+  height: 580px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.form-list-header {
+  position: relative;
+  left: 42%;
+  color: #4d708d;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 20px;
+  white-space: nowrap;
+  /* border-bottom: 1px solid rgba(77, 112, 141, 0.05); */
+}
+.terminal-form-list-header {
+  position: relative;
+  left: 42%;
+  color: #4d708d;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 20px;
+  white-space: nowrap;
+}
+.form-user {
+  margin-top: 25px;
+  color: #4d708d;
+}
+.form-terminal {
+  margin-top: 40px;
+  color: #4d708d;
+}
+.user-input-form {
+  width: 370px;
+  height: 45px;
+  border: 1px solid #e0e7eb;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-top: 10px;
+  color: #4d708d;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.user-form-terms {
+  color: #4d708d;
+  margin-top: 15px;
+  margin-left: 15%;
+  border: 1px solid #e0e7eb;
+  border-radius: 5px;
+}
+.user-form-button-submit,
+.user-form-button3-submit {
+  width: 180px;
+  height: 45px;
+  background: #0097dc;
+  border: 1px solid #0097dc;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 35%;
+  font-size: 16px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.user-modal-form2,
+.user-modal-form3 {
+  display: none;
+}
+.settlement-transaction-table {
+  width: 100vh;
+  height: 100%;
+  margin-top: 5px;
+  background: white;
+  border-radius: 3px;
+  margin-left: 38%;
+}
+.settlement-table-options {
+  display: flex;
+  width: 1011px;
+  height: 60px;
+  background: #f4f4f6;
+  border-radius: 4px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.settlement-table-input {
+  background: #ffffff;
+  border: 1px solid #e3e7eb;
+  border-radius: 4px;
+  width: 700px;
+  height: 40px;
+  margin: 10px 0 10px 10px;
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d708d;
+}
+.user-modal-form-box1 {
+  position: fixed;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 222;
+  left: 35%;
+}
+.user-modal-form-box1 {
+  display: none;
+}
+.user-form-button2-submit {
+  width: 180px;
+  height: 45px;
+  background: #0097dc;
+  border: 1px solid #0097dc;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 35%;
+  font-size: 16px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 20px;
+  cursor: pointer;
+}
