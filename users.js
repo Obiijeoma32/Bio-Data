@@ -34,6 +34,11 @@ userButton2.addEventListener("click", function () {
   userBox2.style.display = "none";
   userBox3.style.display = "block";
 });
+userBox3.addEventListener("click", function () {
+  if ((userBox3.style.display = "block")) {
+    userBox3.style.display = "none";
+  }
+});
 const tableModalHandler = () => {
   firstModal.style.display = "block";
 };
