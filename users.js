@@ -15,12 +15,15 @@ const outClick = document.querySelector(".user-modal-box");
 const userPage = document.querySelector(".user-page-button");
 const userModalForm = document.querySelector(".user-modal-form");
 const userButton2 = document.querySelector(".user-form-button2-submit");
+const boxHandle3 = document.querySelector(".user-modal-box-third");
+const boxHandle1 = document.querySelector(".user-modal-box-first");
+const boxHandle2 = document.querySelector(".user-modal-box-second");
 
-console.log(outClick);
+console.log(boxHandle2);
 userPage.addEventListener("click", function () {
   userBox1.style.display = "block";
 });
-userModalForm.addEventListener("click", function () {
+boxHandle1.addEventListener("click", function () {
   if ((userBox1.style.display = "block")) {
     userBox1.style.display = "none";
   }
@@ -29,12 +32,17 @@ userButton.addEventListener("click", function () {
   userBox1.style.display = "none";
   userBox2.style.display = "block";
 });
+boxHandle2.addEventListener("click", function () {
+  if ((userBox2.style.display = "block")) {
+    userBox2.style.display = "none";
+  }
+});
 userButton2.addEventListener("click", function () {
   userBox1.style.display = "none";
   userBox2.style.display = "none";
   userBox3.style.display = "block";
 });
-userBox3.addEventListener("click", function () {
+boxHandle3.addEventListener("click", function () {
   if ((userBox3.style.display = "block")) {
     userBox3.style.display = "none";
   }
