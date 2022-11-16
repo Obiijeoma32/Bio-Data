@@ -234,6 +234,7 @@ body {
   /* border-spacing: 5px; */
   border: 1px solid #e3e7eb;
   border-radius: 5px;
+  cursor: pointer;
 }
 .transaction-table-output thead tr {
   color: #00325c;
