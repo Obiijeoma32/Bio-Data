@@ -148,7 +148,20 @@ body {
   display: flex;
   align-content: center;
   align-items: center;
-  width: 1011px;
+  width: 1005px;
+  height: 60px;
+  background: #f4f4f6;
+  border-radius: 4px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.terminal-table-options {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 975px;
   height: 60px;
   background: #f4f4f6;
   border-radius: 4px;
@@ -162,6 +175,21 @@ body {
   border: 1px solid #e3e7eb;
   border-radius: 4px;
   width: 700px;
+  height: 40px;
+  margin: 10px 0 10px 10px;
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d708d;
+}
+.terminal-table-input {
+  background: #ffffff;
+  border: 1px solid #e3e7eb;
+  border-radius: 4px;
+  width: 670px;
   height: 40px;
   margin: 10px 0 10px 10px;
   text-align: center;
@@ -235,6 +263,62 @@ body {
   margin-top: 8px;
   line-height: 18px;
 }
+.transaction-footer {
+  background: #f4f4f6;
+  box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 1010px;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  color: #4d708d;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 18px;
+}
+.settlement-footer {
+  background: #f4f4f6;
+  box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 1015px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #4d708d;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 18px;
+}
+.users-footer {
+  background: #f4f4f6;
+  box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 1015px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #4d708d;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 18px;
+}
+.terminal-footer {
+  background: #f4f4f6;
+  box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 982px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #4d708d;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 18px;
+}
 .footer-pages {
   padding: 15px 25px;
 }
@@ -268,6 +352,18 @@ body {
 .user-page-button {
   cursor: pointer;
   margin-right: -55%;
+  width: 140px;
+  height: 38px;
+  background: #0097dc;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.terminal-page-button {
+  cursor: pointer;
+  margin-right: -52%;
   width: 140px;
   height: 38px;
   background: #0097dc;
@@ -611,7 +707,7 @@ body {
 }
 .settlement-table-options {
   display: flex;
-  width: 1011px;
+  width: 1005px;
   height: 60px;
   background: #f4f4f6;
   border-radius: 4px;
@@ -625,7 +721,7 @@ body {
   background: #ffffff;
   border: 1px solid #e3e7eb;
   border-radius: 4px;
-  width: 700px;
+  width: 695px;
   height: 40px;
   margin: 10px 0 10px 10px;
   text-align: center;

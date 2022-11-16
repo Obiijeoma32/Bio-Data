@@ -1,4 +1,4 @@
-const addTerminal = document.querySelector(".user-page-button");
+const addTerminal = document.querySelector(".terminal-page-button");
 const terminalTable = document.querySelector(".user1-table-output");
 const terminalModal = document.querySelector(".terminal-modal1");
 const terminalForm = document.querySelector(".terminal-form2");
