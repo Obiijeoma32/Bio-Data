@@ -1,15 +1,16 @@
+const firstModal = document.querySelector(".user-modal1");
 const userTable = document.querySelector(".user1-table-output");
 // console.log(userTable);
 userTable.addEventListener("click", tableHandler);
 function tableHandler() {
-  window.location.href = "./user1.html";
+  // window.location.href = "./user1.html";
+  firstModal.style.display = "block";
 }
 const tableContent = document.querySelector(".table-content");
 const userButton = document.querySelector(".user-form-button-submit");
 const userBox1 = document.querySelector(".user-modal-form2");
 const userBox2 = document.querySelector(".user-modal-form-box1");
 const userBox3 = document.querySelector(".user-modal-form3");
-const firstModal = document.querySelector(".user-modal1");
 const addUser = document.querySelector(".user-export-button");
 const outClick = document.querySelector(".user-modal-box");
 const userPage = document.querySelector(".user-page-button");
@@ -47,9 +48,7 @@ boxHandle3.addEventListener("click", function () {
     userBox3.style.display = "none";
   }
 });
-const tableModalHandler = () => {
-  firstModal.style.display = "block";
-};
+const tableModalHandler = () => {};
 
 addUser.addEventListener("click", tableModalHandler);
 outClick.addEventListener("click", function () {

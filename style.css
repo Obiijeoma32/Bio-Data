@@ -198,12 +198,19 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  color: #4d708d;
 }
 .search-transaction {
-  padding-top: 10px;
+  padding-top: 9px;
   position: relative;
   right: 27%;
+}
+.search-transaction::placeholder {
+  color: #4d708d;
+  padding-bottom: 15px;
+  font-family: "Euclid Circular B";
+
+  font-weight: 200;
+  font-size: 14px;
 }
 .transaction-table-filter {
   width: 100px;
@@ -221,10 +228,27 @@ body {
   color: #4d708d;
   align-content: center;
 }
+.transaction-table-filter1 {
+  width: 100px;
+  height: 30px;
+  background: #ffffff;
+  margin-top: 5px;
+  border: 1px solid #e3e7eb;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4d708d;
+  align-content: center;
+}
 .user-export-button {
   border: none;
   background-color: transparent;
-  cursor: pointer;
+  color: #4d708d;
+  align-content: center;
 }
 .transaction-table-output {
   border-collapse: collapse;
@@ -235,6 +259,7 @@ body {
   border: 1px solid #e3e7eb;
   border-radius: 5px;
   cursor: pointer;
+  color: #4d708d;
 }
 .transaction-table-output thead tr {
   color: #00325c;
@@ -383,10 +408,12 @@ body {
   font-family: "Euclid Circular B";
   border: 1px solid #e3e7eb;
   border-radius: 5px;
+  color: #4d708d;
 }
 .user1-table-output thead tr {
-  color: #00325c;
+  color: #004a5c;
   font-weight: 0;
+  font-style: normal;
   font-size: 16px;
   text-align: left;
   border: 1px solid #e3e7eb;
@@ -430,7 +457,7 @@ body {
   margin: 0 auto;
   top: 20px;
   z-index: 222;
-  left: 30%;
+  left: 35%;
 }
 .terminal-modal-content,
 .user-modal-form {
@@ -442,14 +469,14 @@ body {
 }
 .user-modal-card {
   background: #ffffff;
-  width: 491px;
+  width: 420px;
   height: 430px;
   border-radius: 20px;
   margin-top: 50px;
 }
 .terminal-modal-card {
   background: #ffffff;
-  width: 491px;
+  width: 420px;
   height: 412px;
   border-radius: 20px;
   margin-top: 50px;
@@ -488,12 +515,12 @@ body {
 }
 .terminal-list-box1 {
   margin-top: 23px;
-  margin-left: -20%;
+  margin-left: -25%;
   text-align: left;
 }
 .user-list-box2 {
   margin-top: 15px;
-  margin-right: 32px;
+  margin-right: 20%;
   text-align: right;
 }
 .list-id {
@@ -535,7 +562,7 @@ body {
 .transaction-modal-card,
 .settlement-modal-card {
   background: #ffffff;
-  width: 550px;
+  width: 480px;
   height: 570px;
   border-radius: 20px;
   margin-top: 40px;
@@ -612,14 +639,14 @@ body {
 }
 .user-modal-card-form {
   background: #ffffff;
-  width: 491px;
+  width: 480px;
   height: 550px;
   border-radius: 20px;
   margin-top: 50px;
 }
 .terminal-modal-form {
   background: #ffffff;
-  width: 491px;
+  width: 480px;
   height: 470px;
   border-radius: 20px;
   margin-top: 50px;
@@ -760,6 +787,7 @@ body {
 .input[type="date"]::before {
   color: #4d708d;
   content: attr(placeholder);
+  font-family: "Euclid Circular B";
 }
 .input[type="date"] {
   color: #ffffff;
