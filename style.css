@@ -262,10 +262,10 @@ body {
   color: #4d708d;
 }
 .transaction-table-output thead tr {
-  color: #00325c;
+  /* color: #00325c;
   font-weight: 50;
   font-family: "Euclid Circular B";
-  font-size: 15px;
+  font-size: 15px; */
   text-align: left;
   border: 1px solid #e3e7eb;
 }
@@ -559,7 +559,13 @@ body {
   z-index: 222;
   left: 30%;
 }
-.transaction-modal-card,
+.transaction-modal-card {
+  background: #ffffff;
+  width: 490px;
+  height: 570px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
 .settlement-modal-card {
   background: #ffffff;
   width: 480px;
@@ -567,13 +573,32 @@ body {
   border-radius: 20px;
   margin-top: 40px;
 }
-.transaction-list-box1,
-.settlement-list-box1 {
+.transaction-list-box1 {
   margin-top: 23px;
-  margin-left: -33%;
+  margin-left: -34%;
   text-align: left;
 }
-.transaction-list-box2,
+.dispute-list-box1 {
+  margin-top: 23px;
+  margin-left: -39%;
+  text-align: left;
+}
+
+.settlement-list-box1 {
+  margin-top: 23px;
+  margin-left: -37%;
+  text-align: left;
+}
+.transaction-list-box2 {
+  margin-top: 23px;
+  margin-right: 30px;
+  text-align: right;
+}
+.dispute-list-box2 {
+  margin-top: 23px;
+  margin-right: 10%;
+  text-align: right;
+}
 .settlement-list-box2 {
   margin-top: 23px;
   margin-right: 35px;
