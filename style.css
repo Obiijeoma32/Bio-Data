@@ -6,13 +6,13 @@ body {
   background: #ffff;
   font-family: "Euclid Circular B", sans-serif;
   overflow-x: hidden;
+  font-style: normal;
 }
 /* main body */
 
 .dashboard {
   display: flex;
   width: 100%;
-  /* border: 10px solid #000; */
 }
 /* side bar path */
 .side-bar {
@@ -51,8 +51,6 @@ body {
 }
 .side-bar-link {
   text-decoration: none;
-  font-family: "Euclid Circular B";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   display: flex;
@@ -73,54 +71,31 @@ body {
 }
 /*Transaction table, no transaction header starts here */
 
-.main-dashboard-container,
-.main-dashboard2-container {
+.main-dashboard-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding-left: 16rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
 }
 
 .main-dashboard-details {
-  font-family: "Euclid Circular B";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
   padding-top: 20px;
-  display: flex;
   color: #68717f;
 }
 .main-dashboard-icon-text {
-  padding-left: 16px;
-  position: relative;
-  left: 100%;
-  margin-top: 40%;
-  text-align: center;
-}
-.main-dashboard-icon {
-  background: rgba(18, 54, 108, 0.08);
-  width: 120px;
-  height: 100px;
-  align-content: center;
-  text-align: center;
+  display: flex;
   justify-content: center;
-  padding-top: 20px;
-  border-radius: 100%;
-}
-
-.main-dashboard-transaction-text {
-  text-align: center;
-  padding-top: 16px;
-  position: relative;
-  left: 75%;
-}
-.main-dashboard-container {
-  /* display: none; */
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* table starts here */
 
 .main-transaction-table {
-  /* border: 1px solid #004a5c; */
   width: 100%;
   height: 100%;
   margin-top: 5px;
@@ -131,17 +106,10 @@ body {
 }
 .main-transaction-header {
   padding-top: 8px;
-  /* padding-left: 35px; */
-  font-family: "Euclid Circular B";
-  font-style: normal;
+  margin-bottom: 7px;
   font-weight: 500;
   font-size: 18px;
-  /* line-height: 120%; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* text-align: center; */
   color: #68717f;
-  /* margin-bottom: 20px; */
 }
 .transaction-table-options {
   display: flex;
@@ -161,7 +129,7 @@ body {
   display: flex;
   align-content: center;
   align-items: center;
-  width: 1018px;
+  width: 100%;
   height: 60px;
   background: #f4f4f6;
   border-radius: 4px;
@@ -189,13 +157,9 @@ body {
   border-radius: 4px;
   width: 700px;
   height: 40px;
-  margin: 10px 0 10px 10px;
-  text-align: center;
-  font-family: "Euclid Circular B";
-  font-style: normal;
+  margin-left: 10px;
   font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
   color: #4d708d;
 }
 .terminal-table-input {
@@ -204,13 +168,11 @@ body {
   border-radius: 4px;
   width: 670px;
   height: 40px;
-  margin: 10px 0 10px 10px;
+  margin-left: 10px;
   text-align: center;
-  font-family: "Euclid Circular B";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
 }
 .search-transaction {
   padding-top: 9px;
@@ -220,42 +182,41 @@ body {
 .search-transaction::placeholder {
   color: #4d708d;
   padding-bottom: 15px;
-  font-family: "Euclid Circular B";
-
   font-weight: 200;
   font-size: 14px;
+  padding-left: 8px;
 }
 .transaction-table-filter {
   width: 100px;
-  height: 35px;
+  height: 32px;
   background: #ffffff;
-  margin-top: 10px;
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
   border: 1px solid #e3e7eb;
   border-radius: 4px;
-  text-align: center;
-  font-family: "Euclid Circular B";
-  font-style: normal;
+  display: flex;
   font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
   color: #4d708d;
+  justify-content: space-evenly;
   align-content: center;
 }
 .transaction-table-filter1 {
   width: 100px;
-  height: 30px;
+  height: 32px;
   background: #ffffff;
-  margin-top: 5px;
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
   border: 1px solid #e3e7eb;
   border-radius: 4px;
-  text-align: center;
-  font-family: "Euclid Circular B";
-  font-style: normal;
+  display: flex;
   font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
   color: #4d708d;
   align-content: center;
+  justify-content: space-evenly;
 }
 .user-export-button {
   border: none;
@@ -268,17 +229,12 @@ body {
   margin: 15px 0;
   white-space: nowrap;
   font-size: 0.9rem;
-  /* border-spacing: 5px; */
   border: 1px solid #e3e7eb;
   border-radius: 5px;
   cursor: pointer;
   color: #4d708d;
 }
 .transaction-table-output thead tr {
-  /* color: #00325c;
-  font-weight: 50;
-  font-family: "Euclid Circular B";
-  font-size: 15px; */
   text-align: left;
   border: 1px solid #e3e7eb;
 }
@@ -393,8 +349,6 @@ body {
 }
 .user-page-button {
   cursor: pointer;
-
-  /* margin-right: -23rem; */
   width: 140px;
   height: 38px;
   background: #0097dc;
@@ -403,10 +357,10 @@ body {
   border: none;
   font-weight: 500;
   font-size: 14px;
+  margin-bottom: 6px;
 }
 .terminal-page-button {
   cursor: pointer;
-  /* margin-right: -21rem; */
   width: 140px;
   height: 38px;
   background: #0097dc;
@@ -415,6 +369,7 @@ body {
   border: none;
   font-weight: 500;
   font-size: 14px;
+  margin-bottom: 6px;
 }
 .user1-table-output,
 .terminal-table-output {
@@ -778,7 +733,8 @@ body {
   margin-top: 5px;
   background: white;
   border-radius: 3px;
-  margin-left: 16rem;
+  padding-right: 5rem;
+  padding-left: 15rem;
 }
 
 .settlement-table-input {
@@ -836,7 +792,7 @@ body {
 .input[type="date"]:valid::before {
   content: "" !important;
 }
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .terminal-page-button {
     margin-right: -0rem;
   }
@@ -889,4 +845,4 @@ body {
   .user-modal-form {
     margin-top: 8rem;
   }
-}
+} */
