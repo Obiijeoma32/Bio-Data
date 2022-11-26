@@ -5,19 +5,21 @@
 body {
   background: #ffff;
   font-family: "Euclid Circular B", sans-serif;
-  width: 100vh;
-  height: 100vh;
+  overflow-x: hidden;
 }
 /* main body */
 
 .dashboard {
   display: flex;
+  width: 100%;
+  /* border: 10px solid #000; */
 }
 /* side bar path */
 .side-bar {
   width: 220px;
   height: 100vh;
-
+  left: 0;
+  top: 0;
   background-color: #ffff;
   border: 0.5px solid #c4ccd2;
   position: fixed;
@@ -71,14 +73,9 @@ body {
 }
 /*Transaction table, no transaction header starts here */
 
-.main-dashboard-content {
-  width: 100vh;
-  height: 100%;
-}
-
 .main-dashboard-container,
 .main-dashboard2-container {
-  width: 100vh;
+  width: 100%;
   height: 100%;
 }
 
@@ -123,32 +120,48 @@ body {
 /* table starts here */
 
 .main-transaction-table {
-  width: 100vh;
+  /* border: 1px solid #004a5c; */
+  width: 100%;
   height: 100%;
   margin-top: 5px;
   background: white;
   border-radius: 3px;
-  margin-left: 38%;
+  padding-right: 5rem;
+  padding-left: 15rem;
 }
 .main-transaction-header {
   padding-top: 8px;
-  padding-left: 35px;
+  /* padding-left: 35px; */
   font-family: "Euclid Circular B";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 120%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  /* line-height: 120%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* text-align: center; */
   color: #68717f;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .transaction-table-options {
   display: flex;
   align-content: center;
   align-items: center;
-  width: 1005px;
+  width: 100%;
+  height: 60px;
+  background: #f4f4f6;
+  border-radius: 4px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.dispute-table-options,
+.settlement-table-options {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 1018px;
   height: 60px;
   background: #f4f4f6;
   border-radius: 4px;
@@ -293,7 +306,7 @@ body {
   background: #f4f4f6;
   box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  width: 1010px;
+  width: 1020px;
   height: 53px;
   display: flex;
   justify-content: space-between;
@@ -303,7 +316,8 @@ body {
   margin-top: 20px;
   line-height: 18px;
 }
-.settlement-footer {
+
+.users-footer {
   background: #f4f4f6;
   box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
@@ -317,11 +331,12 @@ body {
   margin-top: 8px;
   line-height: 18px;
 }
-.users-footer {
+.dispute-footer,
+.settlement-footer {
   background: #f4f4f6;
   box-shadow: 0px 5px 200px 3px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  width: 1015px;
+  width: 1030px;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -374,10 +389,12 @@ body {
 .user-header-transaction {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 .user-page-button {
   cursor: pointer;
-  margin-right: -55%;
+
+  /* margin-right: -23rem; */
   width: 140px;
   height: 38px;
   background: #0097dc;
@@ -389,7 +406,7 @@ body {
 }
 .terminal-page-button {
   cursor: pointer;
-  margin-right: -52%;
+  /* margin-right: -21rem; */
   width: 140px;
   height: 38px;
   background: #0097dc;
@@ -401,6 +418,7 @@ body {
 }
 .user1-table-output,
 .terminal-table-output {
+  width: 100%;
   border-collapse: collapse;
   margin: 15px 0;
   white-space: nowrap;
@@ -543,7 +561,7 @@ body {
   display: none;
 }
 .transaction-modal1-box {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   position: fixed;
   left: 0;
   top: 0;
@@ -555,7 +573,7 @@ body {
 .settlement-modal-content {
   position: fixed;
   margin: 0 auto;
-  top: 10px;
+  top: 7%;
   z-index: 222;
   left: 30%;
 }
@@ -643,7 +661,7 @@ body {
   display: none;
 }
 .settlement-modal1-box {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   position: fixed;
   left: 0;
   top: 0;
@@ -723,7 +741,11 @@ body {
   outline: none;
   padding-left: 10px;
 }
+.user-input-form::placeholder {
+  color: #4d708d;
 
+  font-family: "Euclid Circular B";
+}
 .user-form-terms {
   color: #4d708d;
   margin-top: 15px;
@@ -751,23 +773,12 @@ body {
   display: none;
 }
 .settlement-transaction-table {
-  width: 100vh;
+  width: 100%;
   height: 100%;
   margin-top: 5px;
   background: white;
   border-radius: 3px;
-  margin-left: 38%;
-}
-.settlement-table-options {
-  display: flex;
-  width: 1005px;
-  height: 60px;
-  background: #f4f4f6;
-  border-radius: 4px;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-left: 16rem;
 }
 
 .settlement-table-input {
@@ -824,4 +835,58 @@ body {
 .input[type="date"]:focus::before,
 .input[type="date"]:valid::before {
   content: "" !important;
+}
+@media screen and (min-width: 1440px) {
+  .terminal-page-button {
+    margin-right: -0rem;
+  }
+  .user-page-button {
+    margin-right: -0rem;
+  }
+  .side-bar-logout {
+    margin-top: 7rem;
+  }
+  .main-dashboard-details {
+    margin-top: 20px;
+    margin-left: -13rem;
+  }
+  .main-dashboard-icon {
+    margin-left: -17rem;
+  }
+  .main-dashboard-transaction-text {
+    margin-left: -40rem;
+  }
+  .side-bar {
+    position: fixed;
+    z-index: 222;
+  }
+  .main-transaction-table {
+    margin-top: 20px;
+  }
+  .user-modal-box,
+  .transaction-modal1-box,
+  .settlement-modal1-box,
+  .user-modal-box-first,
+  .user-modal-box-second,
+  .user-modal-box-third,
+  .terminal-modal-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 222;
+    width: 100rem;
+    height: 100vh;
+  }
+  .transaction-modal-content,
+  .settlement-modal-content {
+    position: fixed;
+    margin: 0 auto;
+    top: 12%;
+    z-index: 222;
+    left: 35%;
+  }
+  .user-modal-card,
+  .user-modal-form {
+    margin-top: 8rem;
+  }
 }
