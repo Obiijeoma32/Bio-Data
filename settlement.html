@@ -180,7 +180,7 @@
 
       <!-- table -->
       <div class="settlement-transaction-table">
-        <h2 class="main-transaction-header">Tools</h2>
+        <h2 class="main-transaction-header">Recent Settlement</h2>
 
         <div class="settlement-table-options">
           <div class="settlement-table-input">
@@ -199,9 +199,9 @@
             </svg>
             <input
               class="search-transaction"
-              style="border: none; padding-left: 20px; padding-bottom: 12px; outline: none"
+              style="border: none; margin-right: -26rem; margin-bottom: 15px; outline: none; width: 600px; height: auto"
               type="text"
-              placeholder="Search for transaction"
+              placeholder="Search for settlement"
             />
           </div>
 
@@ -538,31 +538,43 @@
             <div class="footer-pages">1-11 of 1200 pages</div>
             <h3 class="footer-page-info">The page you're on</h3>
             <div class="footer-number">
-              1
+              <select style="border: none; color: #4d708d; font-family: 'Euclid Circular B'; outline: none">
+                <option value="option" selected>1 - 11</option>
+                <option value="man">12 - 22</option>
+                <option value="woman">23 - 32</option>
+                <option value="woman">33 - 42</option>
+                <option value="woman">43 - 52</option>
+                <option value="woman">53 - 62</option>
+                <option value="woman">63 - 72</option>
+              </select>
+              <!-- 1
               <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.25 0.75L4.125 3.875L1 0.75" stroke="#4D708D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg> -->
+            </div>
+            <div class="next-page-click">
+              <svg
+                style="padding-top: 17px; padding-bottom: 15px; padding-left: 10px"
+                width="9"
+                height="15"
+                viewBox="0 0 9 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M7.5 13.5L1.25 7.25L7.5 1" stroke="#707885" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg
+                style="padding-top: 17px; padding-bottom: 15px"
+                ;
+                width="9"
+                height="15"
+                viewBox="0 0 9 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1.5 1L7.75 7.25L1.5 13.5" stroke="#00325C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <svg
-              style="padding-top: 17px; padding-bottom: 15px; padding-left: 20px"
-              width="9"
-              height="15"
-              viewBox="0 0 9 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M7.5 13.5L1.25 7.25L7.5 1" stroke="#707885" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg
-              style="padding-top: 17px; padding-bottom: 15px; margin-right: 5%"
-              width="9"
-              height="15"
-              viewBox="0 0 9 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M1.5 1L7.75 7.25L1.5 13.5" stroke="#00325C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
           </div>
         </footer>
       </div>
@@ -577,7 +589,7 @@
               <div class="settlement-list-box1">
                 <h4>
                   <span class="list-tag"> Amount: </span><br />
-                  <h3 style="font-size: 20px" class="list-id">₦50,000.00</h3>
+                  <h3 style="font-size: 18px; color: #4d708d; font-family: 'Euclid Circular B'" class="list-id">₦50,000.00</h3>
                 </h4>
                 <h4>
                   <span class="list-tag">Terminal Name:</span><br />
@@ -608,7 +620,7 @@
                 <h4>
                   <span class="list-tag">Date: </span>
                   <br />
-                  <h3 style="font-size: 20px" class="list-id">2022-06-26 18:58:39</h3>
+                  <h3 style="font-size: 18px; color: #4d708d; font-family: 'Euclid Circular B'" class="list-id">2022-06-26 18:58:39</h3>
                 </h4>
                 <h4>
                   <span class="list-tag">Account Name:</span><br />

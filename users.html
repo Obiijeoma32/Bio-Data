@@ -201,9 +201,9 @@
             </svg>
             <input
               class="search-transaction"
-              style="border: none; padding-left: 20px; padding-bottom: 12px; outline: none"
+              style="border: none; margin-right: -26rem; margin-bottom: 15px; outline: none; width: 600px"
               type="text"
-              placeholder="Search for transaction"
+              placeholder="Search for user"
             />
           </div>
 
@@ -489,10 +489,15 @@
             <div class="footer-pages">1-11 of 1200 pages</div>
             <h3 class="footer-page-info">The page you're on</h3>
             <div class="footer-number">
-              1
-              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.25 0.75L4.125 3.875L1 0.75" stroke="#4D708D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <select style="border: none; color: #4d708d; font-family: 'Euclid Circular B'; outline: none">
+                <option value="option" selected>1 - 11</option>
+                <option value="man">12 - 22</option>
+                <option value="woman">23 - 32</option>
+                <option value="woman">33 - 42</option>
+                <option value="woman">43 - 52</option>
+                <option value="woman">53 - 62</option>
+                <option value="woman">63 - 72</option>
+              </select>
             </div>
             <svg
               style="padding-top: 17px; padding-bottom: 15px; padding-left: 20px"
@@ -584,27 +589,13 @@
               <input class="user-input-form" type="number" placeholder="Contact Phone" required /><br />
               <input class="user-input-form" type="text" placeholder="Enter Residential Address" required /><br />
               <input class="user-input-form input" placeholder="Select D.O.B" type="date" id="date" required /><br />
-              <select
-                style="
-                  width: 383px;
-                  height: 45px;
-                  margin-top: 10px;
-                  margin-left: 10%;
-                  border: 1px solid #e0e7eb;
-                  border-radius: 5px;
-                  color: #4d708d;
-                  font-size: 14px;
-                  font-weight: 400;
-                  outline: none;
-                "
-                id="gender"
-                required
-              >
+              <select class="user-selection" id="gender" required>
                 <option value="option" selected>Select Gender</option>
                 <option value="man">Male</option>
                 <option value="woman">Female</option>
-                <option value="another">Other</option></select
-              ><br />
+                <!-- <option value="another">Other</option>>-->
+              </select>
+              <br />
               <input class="user-input-form" type="text" placeholder="Place of Birth" />
 
               <button class="user-form-button-submit" type="button">Next</button>
@@ -649,7 +640,7 @@
               <input class="user-input-form" type="text" placeholder="Guarantor's Address" /><br />
               <input class="user-form-terms" style="color: #4d708d; font-size: 14px; margin-top: 25px" type="checkbox" />
               <label style="color: #4d708d; font-size: 14px; margin-top: 25px" for="terms">Terms & Conditions</label><br />
-              <button class="user-form-button3-submit" type="submit">Creat User</button>
+              <button class="user-form-button3-submit" type="submit">Create User</button>
             </form>
           </div>
         </div>
