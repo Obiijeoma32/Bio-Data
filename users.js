@@ -13,6 +13,7 @@ const userBox2 = document.querySelector(".user-modal-form-box1");
 const userBox3 = document.querySelector(".user-modal-form3");
 const addUser = document.querySelector(".user-export-button");
 const outClick = document.querySelector(".user-modal-box");
+const clickOut = document.querySelector(".user-button-handle-close");
 const userPage = document.querySelector(".user-page-button");
 const userModalForm = document.querySelector(".user-modal-form");
 const userButton2 = document.querySelector(".user-form-button2-submit");
@@ -56,7 +57,11 @@ outClick.addEventListener("click", function () {
     firstModal.style.display = "none";
   }
 });
-
+clickOut.addEventListener("click", function () {
+  if ((firstModal.style.display = "block")) {
+    firstModal.style.display = "none";
+  }
+});
 // tableContent.addEventListener("click");
 
 // console.log(userButton);
