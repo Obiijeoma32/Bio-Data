@@ -21,7 +21,7 @@ body {
   left: 0;
   top: 0;
   background-color: #ffff;
-  border: 0.5px solid #c4ccd2;
+  border: 1px solid #c4ccd2;
   position: fixed;
 }
 .side-bar-profile {
@@ -112,7 +112,8 @@ body {
   color: #68717f;
   margin-left: 10px;
 }
-.transaction-table-options {
+.transaction-table-options,
+.user-table-options {
   display: flex;
   align-content: center;
   align-items: center;
@@ -188,7 +189,8 @@ body {
   font-size: 14px;
   padding-left: 8px;
 }
-.transaction-table-filter {
+.transaction-table-filter,
+.settlement-table-filter {
   width: 100px;
   height: 32px;
   background: #ffffff;
@@ -862,57 +864,36 @@ body {
 .next-page-click {
   margin-right: 2rem;
 }
-/* @media screen and (min-width: 1440px) {
-  .terminal-page-button {
-    margin-right: -0rem;
+@media screen and (min-width: 1440px) {
+  .transaction-table-options {
+    width: 63.5rem;
   }
-  .user-page-button {
-    margin-right: -0rem;
+  .settlement-table-options {
+    width: 64rem;
   }
-  .side-bar-logout {
-    margin-top: 7rem;
+  .user-table-options {
+    width: 69.5rem;
   }
-  .main-dashboard-details {
-    margin-top: 20px;
-    margin-left: -13rem;
+  .dispute-table-options {
+    width: 64rem;
   }
-  .main-dashboard-icon {
-    margin-left: -17rem;
+  .terminal-table-options {
+    width: 69.5rem;
   }
-  .main-dashboard-transaction-text {
-    margin-left: -40rem;
+  .transaction-table-filter {
+    margin-left: -3rem;
   }
-  .side-bar {
-    position: fixed;
-    z-index: 222;
+  .terminal-footer {
+    width: 70.1rem;
   }
-  .main-transaction-table {
-    margin-top: 20px;
+  .transaction-footer {
+    width: 63.9rem;
   }
-  .user-modal-box,
-  .transaction-modal1-box,
-  .settlement-modal1-box,
-  .user-modal-box-first,
-  .user-modal-box-second,
-  .user-modal-box-third,
-  .terminal-modal-box {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 222;
-    width: 100rem;
-    height: 100vh;
+  .users-footer {
+    width: 70.1rem;
   }
-  .transaction-modal-content,
-  .settlement-modal-content {
-    position: fixed;
-    margin: 0 auto;
-    top: 12%;
-    z-index: 222;
-    left: 35%;
+  .dispute-footer,
+  .settlement-footer {
+    width: 64.5rem;
   }
-  .user-modal-card,
-  .user-modal-form {
-    margin-top: 8rem;
-  }
-} */
+}
