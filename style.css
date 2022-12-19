@@ -27,12 +27,12 @@ body {
 .side-bar-profile {
   background: #f5f5f6;
   border-radius: 10px;
-  width: 180px;
+  width: 189px;
   height: 66px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 0.7rem;
 }
 .profile-bar {
   margin-top: 8px;
@@ -41,6 +41,9 @@ body {
   margin-left: 3px;
   text-align: center;
   white-space: nowrap;
+}
+.profile-bar img {
+  margin-left: 2px;
 }
 .side-bar-details {
   width: 30px;
@@ -61,7 +64,7 @@ body {
   padding-right: 18px;
 }
 .side-bar-logout {
-  padding-top: 130px;
+  padding-top: 8rem;
 }
 .side-bar-nav-click {
   color: #0098db;
@@ -865,35 +868,40 @@ body {
   margin-right: 2rem;
 }
 @media screen and (min-width: 1440px) {
-  .transaction-table-options {
-    width: 63.5rem;
+  .transaction-table-options,
+  .transaction-table-output,
+  .transaction-footer {
+    width: 71.5rem;
   }
-  .settlement-table-options {
-    width: 64rem;
+  .settlement-table-options,
+  .settlement-footer {
+    width: 71.5rem;
   }
   .user-table-options {
-    width: 69.5rem;
+    width: 71.5rem;
   }
   .dispute-table-options {
-    width: 64rem;
+    width: 71.5rem;
   }
   .terminal-table-options {
-    width: 69.5rem;
+    width: 71.5rem;
   }
   .transaction-table-filter {
     margin-left: -3rem;
   }
   .terminal-footer {
-    width: 70.1rem;
+    width: 71.5rem;
   }
-  .transaction-footer {
-    width: 63.9rem;
+
+  .users-footer,
+  .user1-table-output,
+  .terminal-table-output {
+    width: 71.5rem;
   }
-  .users-footer {
-    width: 70.1rem;
+  .dispute-footer {
+    width: 71.5rem;
   }
-  .dispute-footer,
-  .settlement-footer {
-    width: 64.5rem;
+  .side-bar-logout {
+    padding-top: 12rem;
   }
 }
